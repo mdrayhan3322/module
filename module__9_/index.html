@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display:flex;
+            gap:10px;
+            
+        }
+        .box{
+            background-color:blueviolet;
+            width:300px;
+            height:300px;
+            color:white;
+            border-radius:20px;
+            padding:20px;
+        }
+        .container_2{
+            display:flex;
+            gap:15px;
+            margin-top:12px;
+            flex-wrap:wrap;
+            
+            
+        }
+        .item{
+            width:200px;
+            height:150px;
+            background-color:aquamarine;
+            border:2px solid tomato;
+            padding:14px;
+        }
+        @media screen and (max-width : 576px){
+            .container{
+                flex-direction: column;
+            }
+        }
+        /* @media screen and (max-width : 576px){
+            .container_2{
+                flex-direction:column;
+                color:white;
+
+            }
+        } */
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <h2>box 1</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit provident autem, vero id corporis quisquam aliquam eveniet excepturi in culpa? Voluptatem provident molestiae placeat, ipsum porro quam dolor, aliquid perspiciatis velit voluptate nulla animi tenetur distinctio laborum? </p>
+        </div>
+        <div class="box">
+            <h2>box 2</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum impedit earum, rem natus, est laborum dolores culpa temporibus et provident, cupiditate sunt in. Nihil </p>
+        </div>
+    </div>
+
+    <div class="container_2">
+        <div class="item">item  01</div>
+        <div class="item">item  02</div>
+        <div class="item">item  03</div>
+        <div class="item">item  04</div>
+        <div class="item">item  05</div>
+        <div class="item">item  06</div>
+        <div class="item">item  07</div>
+        <div class="item">item  08</div>
+        <div class="item">item  09</div>
+        <div class="item">item  010</div>
+    </div>
+</body>
+</html>
